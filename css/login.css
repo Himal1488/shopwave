@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: url("../../images/picture1.jpeg") no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.form-box {
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    /* 🔥 Animated Tech Gradient */
+    background: linear-gradient(
+        135deg,
+        rgba(0, 255, 255, 0.25),   /* cyan glow */
+        rgba(0, 140, 255, 0.25),   /* bright blue */
+        rgba(0, 80, 160, 0.25),    /* deep blue */
+        rgba(0, 0, 0, 0.35)        /* dark edge */
+    );
+    animation: gradientMove 8s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 100%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 0%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+button {
+    background: #0066ff;
+    color: white;
+}

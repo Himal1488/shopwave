@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account — ShopWave</title>
+
+    <!-- Theme + Page Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body>
+
+<!-- THEME TOGGLE -->
+<div class="theme-toggle">
+    <input type="checkbox" id="themeSwitch">
+    <label for="themeSwitch">🌙</label>
+</div>
+
+<!-- LOGIN CHECK -->
+<script>
+    const u = localStorage.getItem("shopwave-user");
+    if (!u) window.location.href = "login.html";
+</script>
+
+<div class="profile-container">
+
+    <h1>My Profile</h1>
+    <h3 id="welcomeUser">Hello,</h3>
+
+    <!-- Profile Picture -->
+    <div class="profile-picture-container">
+
+        <div class="profile-pic-wrapper">
+            <img id="profilePreview" src="../images/default-user.png">
+        </div>
+
+        <div class="upload-area" id="uploadArea">
+            <p>Drop image here or click to upload</p>
+            <input type="file" id="profileInput" accept="image/*">
+        </div>
+
+        <button class="yellow-btn save-btn" id="savePicBtn">Save Profile Picture</button>
+    </div>
+
+    <div class="menu-buttons">
+        <button class="yellow-btn">Balance & Spending Overview</button>
+        <button class="yellow-btn">To Ship & To Receive</button>
+        <button class="yellow-btn">Order History</button>
+        <button class="yellow-btn">Edit Personal Information</button>
+        <button class="yellow-btn">Offers</button>
+
+        <button class="delete-btn">Delete Account</button>
+        <button class="logout-btn" id="logoutBtn">Logout</button>
+    </div>
+
+    <footer>© 2025 ShopWave</footer>
+
+</div>
+
+<script src="js/account.js"></script>
+
+</body>
+</html>
+

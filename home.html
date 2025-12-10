@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopWave — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- NAV -->
+    <header class="nav glass-nav">
+      <div class="nav-left">
+        <div class="logo">ShopWave</div>
+        <nav class="links">
+          <a href="home.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-wrap">
+          <input id="searchInput" type="search" placeholder="Search phones, laptops..." />
+          <button id="searchBtn" class="btn small">Search</button>
+          <button id="filterToggle" class="icon-btn" title="Filters">⚙️</button>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle">🌗</button>
+        <a href="login.html" class="btn small login-btn">Login</a>
+        <a href="register.html" class="btn small ghost register-btn">Register</a>
+        <a href="account.html" class="icon-btn">👤</a>
+        <a href="cart.html" class="icon-btn">🛒</a>
+      </div>
+    </header>
+
+    <!-- FILTER POPUP (initially hidden) -->
+    <div id="filterSidebar" class="filter-sidebar" aria-hidden="true">
+      <h3>Search filters</h3>
+      <label>Category
+        <select id="filterCategory">
+          <option value="">All categories</option>
+          <option>Phones</option>
+          <option>Laptops</option>
+          <option>Printers</option>
+          <option>Tablets</option>
+          <option>Cameras</option>
+          <option>Speakers</option>
+          <option>Routers</option>
+          <option>Wearables</option>
+          <option>Accessories</option>
+          <option>Monitors</option>
+        </select>
+      </label>
+
+      <label>Price min
+        <input id="filterMin" type="number" min="0" placeholder="0" />
+      </label>
+      <label>Price max
+        <input id="filterMax" type="number" min="0" placeholder="500000" />
+      </label>
+
+      <div class="rating-row">
+        <div>Rating</div>
+        <label><input type="radio" name="rating" value="">Any</label>
+        <label><input type="radio" name="rating" value="1">1★+</label>
+        <label><input type="radio" name="rating" value="2">2★+</label>
+        <label><input type="radio" name="rating" value="3">3★+</label>
+        <label><input type="radio" name="rating" value="4">4★+</label>
+        <label><input type="radio" name="rating" value="5">5★</label>
+      </div>
+
+      <div class="filter-actions">
+        <button id="applyFilter" class="btn small primary">Apply</button>
+        <button id="resetFilter" class="btn small ghost">Reset</button>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero parallax">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <h1 class="title glow-text">Shop the best electronics — fast, secure, local</h1>
+        <p class="subtitle">Phones • Laptops • Printers • Cameras • Accessories</p>
+        <div class="hero-actions">
+        <a id="browseProductsBtn" class="btn primary glow-btn" href="products.html">Browse Products</a>
+          <button id="tourBtn" class="btn ghost">Take a tour</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories decorated-categories">
+      <button class="cat">Phones</button>
+      <button class="cat">Laptops</button>
+      <button class="cat">Printers</button>
+      <button class="cat">Tablets</button>
+      <button class="cat">Cameras</button>
+      <button class="cat">Speakers</button>
+      <button class="cat">Routers</button>
+      <button class="cat">Wearables</button>
+      <button class="cat">Accessories</button>
+      <button class="cat">Monitors</button>
+    </section>
+
+    <!-- RECOMMENDED -->
+    <main class="content">
+      <h2 class="section-title fancy-title">Recommended for You</h2>
+
+      <div id="recommendedGrid" class="products-grid">
+        <!-- JS will render exactly 3 recommended cards here -->
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer glass-footer">
+      <div class="left">© <span id="year"></span> ShopWave</div>
+      <div class="right">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+
+
+

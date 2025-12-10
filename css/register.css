@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../../images/picture2.jpeg") no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Center container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Animated Gradient Form Box */
+.form-box {
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    animation: gradientAnimation 6s infinite alternate;
+    background: linear-gradient(45deg, #2054ff, rgb(139, 102, 22), #351828, #701e40);
+    background-size: 400% 400%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    color: gold;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Inputs centered text */
+input, button {
+    background-color: #000000;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;        /* centers typed text */
+    font-size: 15px;
+    color: gold;               /* input text gold */
+}
+
+/* Placeholder centered + gold */
+input::placeholder {
+    text-align: center;
+    color: gold;
+    opacity: 0.7;
+}
+
+/* Buttons */
+button {
+    background: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: gold;
+}
+
+
+h2
+{
+    text-align: center;
+}
+
+a
+{
+    color: gold;
+}
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ShopWave</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+
+            /* FIXED BACKGROUND FULL SCREEN */
+            background: url("..//images/picture5.avif") no-repeat center center fixed;
+            background-size: cover;
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-container {
+            width: 95%;
+            max-width: 1650px;
+
+            background: rgba(0, 0, 0, 0.6);
+            color: gold;
+            padding: 30px 35px;
+            border-radius: 18px;
+
+            box-shadow: 0 0 25px gold;
+            animation: glow 4s infinite alternate;
+
+            /* CONTENT FIX — scroll if too long */
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px gold; }
+            50% { box-shadow: 0 0 35px orange; }
+            100% { box-shadow: 0 0 20px red; }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            margin-top: 25px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .social-icons img:hover {
+            transform: scale(1.15);
+            filter: drop-shadow(0px 0px 8px gold);
+        }
+
+        .payments {
+            text-align: center;
+        }
+        .payments img {
+            width: 110px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-container">
+
+        <h1>About ShopWave</h1>
+
+        <p>
+            ShopWave is a modern and user-friendly e-commerce platform designed to provide fast, secure, 
+            and smooth online shopping experiences. Our platform allows customers to browse and purchase
+            high-quality products with ease using well-optimized interfaces and modern technologies.
+        </p>
+
+        <p>
+            We built ShopWave with a strong focus on the Nepali market, enabling customers to make safe payments 
+            using <b>eSewa</b> and <b>Khalti</b>. Our goal is to keep online shopping simple, fast, 
+            and easy for everyone.
+        </p>
+
+        <h2 class="section-title">Our Mission</h2>
+        <p>
+            To make online shopping accessible, enjoyable, and secure for every user by offering a fast, well-designed, 
+            and affordable local e-commerce platform.
+        </p>
+
+        <h2 class="section-title">Our Vision</h2>
+        <p>
+            To become a trusted and leading Nepali e-commerce service focusing on convenience, transparent transactions, 
+            and innovative features like wallet top-up and smart product filtering.
+        </p>
+
+        <h2 class="section-title">Why Choose ShopWave?</h2>
+        <p>✔ Easy login & fast checkout experience</p>
+        <p>✔ Secure payments using eSewa & Khalti</p>
+        <p>✔ Clean modern UI with smooth animations</p>
+        <p>✔ Better product sorting using Selection Sort algorithm</p>
+        <p>✔ Simple, fast and made specifically for Nepali users</p>
+
+        <h2 class="section-title">Payment Methods</h2>
+        <div class="payments">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/ESewa_Logo.png/640px-ESewa_Logo.png">
+            <img src="https://seeklogo.com/images/K/khalti-logo-6E6F1E0BD8-seeklogo.com.png">
+        </div>
+
+        <p>
+            Soon, we will integrate <b>Sandbox Testing</b> for payment verification and enable 
+            <b>ShopWave Wallet Top-Up</b> for faster and smoother checkout experiences.
+        </p>
+
+        <h2 class="section-title">Connect With Us</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=103ee3w6" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+            </a>
+
+            <a href="https://www.facebook.com/share/1C9ccqbtcL/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png">
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+

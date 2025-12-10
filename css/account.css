@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("../../images/picture110.jpg") no-repeat center 22% fixed;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+
+/* Dark mode -> dark overlay on same picture */
+body.dark-mode::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(2px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* PROFILE CARD WITH ITS OWN BACKGROUND IMAGE */
+.profile-container {
+    background: url("../../images/picture111.jpg") no-repeat center center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    width: 420px;
+    padding: 30px;
+    margin: 60px auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add dark overlay on top of the card background */
+.profile-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(3px);
+    z-index: 0;
+}
+
+.profile-container > * {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 32px;
+    color: gold;
+}
+
+.profile-picture-container {
+    margin-bottom: 20px;
+}
+
+.profile-pic-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    border: 5px solid gold;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.profile-pic-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload-area {
+    width: 85%;
+    padding: 15px;
+    margin: 0 auto;
+    border: 2px dashed gold;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.15);
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+.upload-area input {
+    display: none;
+}
+
+/* BUTTONS */
+.menu-buttons button,
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.yellow-btn {
+    background: gold;
+    color: black;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background: #ff4444;
+    color: white;
+}
+
+.delete-btn {
+    background: #333;
+    color: white;
+}
+
+.theme-toggle {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+.theme-toggle input {
+    display: none;
+}
+
+.theme-toggle label {
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}

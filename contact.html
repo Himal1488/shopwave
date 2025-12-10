@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ShopWave</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url("..//images/picture6.jpg") no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .glass-box {
+            width: 80%;
+            max-width: 700px;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            border: 2px solid gold;
+        }
+
+        h1, p, label {
+            color: gold;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid gold;
+            background: rgba(0, 0, 0, 0.4);
+            color: gold;
+            margin-top: 8px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border-radius: 10px;
+            border: none;
+            background: gold;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(255, 215, 100);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glass-box">
+        <h1>Contact Us</h1>
+        <p>Have questions? We're here to help!</p>
+
+        <form>
+            <label>Your Name</label><br>
+            <input type="text" placeholder="Enter your name"><br><br>
+
+            <label>Your Email</label><br>
+            <input type="email" placeholder="Enter your email"><br><br>
+
+            <label>Your Message</label><br>
+            <textarea rows="5" placeholder="Write your message"></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

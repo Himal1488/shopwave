@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopWave — Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <header class="nav glass-nav">
+      <div class="nav-left">
+        <div class="logo">ShopWave</div>
+        <nav class="links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-wrap">
+          <input id="searchInputProd" type="search" placeholder="Search phones, laptops..." />
+          <button id="searchBtnProd" class="btn small">Search</button>
+          <button id="filterToggleProd" class="icon-btn">⚙️</button>
+        </div>
+        <button id="themeToggleProd" class="theme-toggle">🌗</button>
+        <a href="login.html" class="btn small login-btn">Login</a>
+        <a href="register.html" class="btn small ghost register-btn">Register</a>
+        <a href="account.html" class="icon-btn">👤</a>
+        <a href="cart.html" class="icon-btn">🛒</a>
+      </div>
+    </header>
+
+    <!-- same filter sidebar (copied) -->
+    <div id="filterSidebarProd" class="filter-sidebar" aria-hidden="true">
+      <h3>Search filters</h3>
+      <label>Category
+        <select id="filterCategoryProd">
+          <option value="">All categories</option>
+          <option>Phones</option>
+          <option>Laptops</option>
+          <option>Printers</option>
+          <option>Tablets</option>
+          <option>Cameras</option>
+          <option>Speakers</option>
+          <option>Routers</option>
+          <option>Wearables</option>
+          <option>Accessories</option>
+          <option>Monitors</option>
+        </select>
+      </label>
+
+      <label>Price min
+        <input id="filterMinProd" type="number" min="0" placeholder="0" />
+      </label>
+      <label>Price max
+        <input id="filterMaxProd" type="number" min="0" placeholder="500000" />
+      </label>
+
+      <div class="rating-row">
+        <div>Rating</div>
+        <label><input type="radio" name="ratingProd" value="">Any</label>
+        <label><input type="radio" name="ratingProd" value="1">1★+</label>
+        <label><input type="radio" name="ratingProd" value="2">2★+</label>
+        <label><input type="radio" name="ratingProd" value="3">3★+</label>
+        <label><input type="radio" name="ratingProd" value="4">4★+</label>
+        <label><input type="radio" name="ratingProd" value="5">5★</label>
+      </div>
+
+      <div class="filter-actions">
+        <button id="applyFilterProd" class="btn small primary">Apply</button>
+        <button id="resetFilterProd" class="btn small ghost">Reset</button>
+      </div>
+    </div>
+
+    <main class="content container">
+      <h2 class="section-title fancy-title">All Products</h2>
+      <div id="productsGrid" class="product-grid">
+        <!-- JS will render 100 product cards here -->
+      </div>
+    </main>
+
+    <footer class="footer glass-footer">
+      <div class="left">© <span id="yearProd"></span> ShopWave</div>
+      <div class="right">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
